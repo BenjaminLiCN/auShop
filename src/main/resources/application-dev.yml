@@ -1,0 +1,28 @@
+server:
+  port: 8082
+  context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/wxblog_dev?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
+  mail:
+    host: smtp.qq.com
+    username: 121894598@qq.com
+    password: ifgmsmqhamnrbiic
+    default-encoding: UTF-8
